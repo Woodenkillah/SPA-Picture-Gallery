@@ -1,0 +1,80 @@
+.NavBar {
+  position: fixed;
+  width: 10vw;
+  min-width: 80px;
+  height: 100vh;
+  background-color: rgb(80,64,144);
+  z-index: 999;
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 200%;
+  height: 100%;
+  top: 0;
+  background-color: rgb(80,64,144);
+  z-index: 1;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.35s ease-in-out;
+}
+
+.content__opened {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 1vw;
+  margin-top: 1vh;
+}
+
+.avatar img {
+  width: 10vw;
+  height: 10vw;
+  min-width: 90px;
+  min-height: 90px;
+  border-radius: 50%;
+}
+
+.avatar .details {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 1vh;
+  margin-right: 1vw;
+}
+
+.avatar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.links {
+  align-self: center;
+  margin-top: 2vh;
+  border-top: 5px solid rgb(255, 255, 255);
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links li {
+  list-style-type: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 4vmin;
+}

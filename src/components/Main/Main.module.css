@@ -1,0 +1,6 @@
+.Main {
+  margin-left: 10vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

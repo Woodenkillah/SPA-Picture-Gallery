@@ -1,0 +1,50 @@
+.MyInfo {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+.MyInfo h2 {
+  margin: 0 auto;
+}
+
+.MyInfo .avatar {
+  display: flex;
+  flex-direction: row;
+}
+
+.MyInfo img {
+  width: 25vmin;
+  height: 25vmin;
+  border-radius: 50%;
+}
+
+.MyInfo .avatar_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.MyInfo .my_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.MyInfo .tech_stack {
+
+}
+
+.MyInfo .add_links {
+
+}
+
+.MyInfo .prev_job {
+
+}
+
+.MyInfo .hobbies {
+
+}
+

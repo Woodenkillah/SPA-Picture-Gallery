@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './components/App/App';
+import {Provider} from 'react-redux';
+import {store} from './redux/store';
+import {fetchPicsList} from './redux/pictures/api-actions';
+import { Router as BrowserRouter } from 'react-router-dom';
+import browserHistory from './browser-history';
+
+
+store.dispatch(fetchPicsList())
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <BrowserRouter history={browserHistory}>
+      <App />
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
