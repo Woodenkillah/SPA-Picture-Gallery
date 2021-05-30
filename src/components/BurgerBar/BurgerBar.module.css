@@ -12,7 +12,7 @@
   z-index: 2;
 }
 
-.burgerBar__opened {
+.BurgerBar.burgerBar__opened {
   transform: translateX(-50%) rotate(90deg);
 }
 

@@ -1,6 +1,10 @@
 import styles from './MyInfo.module.css';
-import avatar from '../../img/avatar/avatar2.jpg';
+import photo from '../../img/photo/photo.jpg';
 import {MyContacts} from '../../constants';
+import vkIcon from '../../img/icons/vk_icon.svg';
+import gmailIcon from '../../img/icons/gmail_icon.svg';
+import gitIcon from '../../img/icons/git_icon.svg';
+import codewarsIcon from '../../img/icons/codewars_icon.svg';
 
 const MyInfo = () => {
   return (
@@ -10,15 +14,22 @@ const MyInfo = () => {
 
         <div className={styles.contacts}>
           <div className={styles.contacts_details}> 
-            <img src={avatar} alt={`my avatar`}/>
+            <img className={styles.photo} src={photo} alt={`Roman Boychuk`}/>
             <h4>{MyContacts.MOB}</h4>
-            <a href={`mailto:${MyContacts.EMAIL}`}>{MyContacts.EMAIL}</a><br/>
-            <a href={MyContacts.VK} target='_blank' rel='noopener noreferrer'>{MyContacts.VK}</a>
+            <a href={`mailto:${MyContacts.EMAIL}`}>
+              <img className={styles.icon} src={gmailIcon} alt={`gmail icon`}/>
+              <span>{MyContacts.EMAIL}</span>
+            </a>
+            <br/>
+            <a href={MyContacts.VK} target='_blank' rel='noopener noreferrer'>
+              <img className={styles.icon} src={vkIcon} alt={`vkontakte icon`}/>
+              <span>{MyContacts.VK}</span>
+            </a>
           </div>
           <div className={styles.contacts_text}>
             <h2>Бойчук Роман Евгеньевич</h2>
             <h4>01.07.1990</h4>
-            <h3>Frontent developer (React)</h3>
+            <h3>Frontend developer (React)</h3>
           </div>
         </div>
 
@@ -35,10 +46,14 @@ const MyInfo = () => {
           </div>
           <div className={styles.add_links}>
             <h4>Примеры моего кода</h4>
-            <ul>
-              <li>GitHub - <a href='https://github.com/Woodenkillah' target='_blank' rel='noopener noreferrer'>https://github.com/Woodenkillah</a></li>
-              <li>Codewars - <a href='https://www.codewars.com/users/WoodenKillah' target='_blank' rel='noopener noreferrer'>https://www.codewars.com/users/WoodenKillah</a></li>
-            </ul>
+            <a href='https://github.com/Woodenkillah' target='_blank' rel='noopener noreferrer'>
+              <img className={styles.icon} src={gitIcon} alt={`GitHub icon`}/>
+              <span>https://github.com/Woodenkillah</span>
+            </a>
+            <a href='https://www.codewars.com/users/WoodenKillah' target='_blank' rel='noopener noreferrer'>
+              <img className={styles.icon} src={codewarsIcon} alt={`Codewars icon`}/>
+              <span>https://www.codewars.com/users/WoodenKillah</span>
+            </a>
           </div>
           <div className={styles.hobbies}>
             <h4>Увлечения</h4>

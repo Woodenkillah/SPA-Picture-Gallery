@@ -1,9 +1,9 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import styles from './NavBar.module.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import BurgerBar from '../BurgerBar/BurgerBar';
 import avatar from '../../img/avatar/avatar.jpg';
-import {AppRoutes, MyContacts} from '../../constants';
+import { AppRoutes, MyContacts } from '../../constants';
 
 const NavBar = () => {
 

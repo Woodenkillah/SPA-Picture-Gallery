@@ -21,9 +21,6 @@ body {
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: var(--sand); */
-  /* background-image: linear-gradient(to right top, #dadada, #c7c6c7, #b5b2b4, #a49ea0, #938b8b);
-  background-image: linear-gradient(to left bottom, #0d6752, #3c9e68, #4eb07f, #a5d138, #f6ec12); */
   background-image: linear-gradient(to right top, #8bf0bb, #6bcca0, #4da986, #2f876c, #0d6752);
 }
 

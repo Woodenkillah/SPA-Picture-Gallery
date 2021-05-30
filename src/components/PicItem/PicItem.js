@@ -1,7 +1,7 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import styles from './PicItem.module.css';
 import browserHistory from '../../browser-history';
-import {AppRoutes} from '../../constants';
+import { AppRoutes } from '../../constants';
 
 const PicItem = ({title, url, targetId}) => {
 

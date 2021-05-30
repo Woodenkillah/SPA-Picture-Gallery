@@ -28,8 +28,10 @@ const Details = () => {
         <div className={styles.info_block__text}>
           <h3>{title}</h3>
           <p>{`ID изображения: ${id}`}</p>
-          <p>Ссылка на источник изображения: <a href={url} target='_blank' rel='noopener noreferrer'>{url}</a></p>
-          <p>Примечание: Цвет изображения по ссылке на источник выше может отличаться из-за применненного цветовогот фильтра.</p>
+          <p>Ссылка на источник изображения: 
+            <a href={url} target='_blank' rel='noopener noreferrer'>{url}</a>
+          </p>
+          <p><b>Примечание:</b> Цвет изображения по ссылке на источник выше может отличаться из-за цветовогот фильтра, примененного в Галерее.</p>
         </div>
         <img src={url} alt={title}/>
       </div>

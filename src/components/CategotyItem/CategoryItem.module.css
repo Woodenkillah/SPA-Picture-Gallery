@@ -27,6 +27,6 @@
 .active {
   background-color: var(--orange);
   transform: scale(1.1);
-  box-shadow: 10px 10px 10px 10px rgb(0 0 0 / 20%);
+  box-shadow: 10px 10px 10px 10px rgb(0, 0, 0, 0.2);
   z-index: 1;
 }
