@@ -1,7 +1,18 @@
 .Header {
   margin-left: 10vw;
-  padding-bottom: 1.5%;
   text-align: center;
   color: rgb(80,64,144);
-  background-color:rgb(112, 121, 253);
+  /* background-color:rgb(112, 121, 253); */
+  /* background: rgb(147,139,139); */
+  /* background: linear-gradient(180deg, rgba(4,58,61,1) 0%, rgba(4,58,61,1) 40%, rgba(4,58,61,1) 60%, rgba(10,74,79,1) 88%, rgba(63,92,94,1) 97%, rgba(147,139,139,1) 100%);   */
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Header h1 {
+  font-size: 6vw;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--silver);
 }

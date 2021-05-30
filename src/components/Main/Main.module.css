@@ -1,6 +1,8 @@
 .Main {
   margin-left: 10vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: var(--padding);
+  padding-bottom: calc(var(--padding) * 3);
 }

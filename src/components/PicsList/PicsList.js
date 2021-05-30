@@ -1,13 +1,14 @@
 import styles from './PicsList.module.css';
 import PicItem from '../PicItem/PicItem';
+import Message from '../Message/Message';
 
 const PicsList = ({picsList, isLoadingCompleted}) => {
 
   if (picsList.length === 0 && isLoadingCompleted) {
+    const messageText = `В настоящий момент изображения в галерее отсутствуют.`
+
     return (
-      <div className={styles.nopics}>
-        <h3 >В настоящий момент изображения в галерее отсутсвуют.</h3>
-      </div>
+      <Message text={messageText}/>
     )
   }
 

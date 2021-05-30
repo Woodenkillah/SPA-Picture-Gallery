@@ -1,0 +1,10 @@
+.Message {
+  width: 65vw;
+  margin: 0 auto;
+  padding: var(--padding) 0;
+}
+
+.Message h3 {
+  text-align: center;
+  color: var(--silver);
+}

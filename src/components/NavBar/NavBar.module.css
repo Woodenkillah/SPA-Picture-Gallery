@@ -3,7 +3,8 @@
   width: 10vw;
   min-width: 80px;
   height: 100vh;
-  background-color: rgb(80,64,144);
+  background-color: var(--carbon);
+  box-shadow: 0 33px 39px 31px rgba(0, 0, 0, 0.2);
   z-index: 999;
 }
 
@@ -15,7 +16,8 @@
   width: 200%;
   height: 100%;
   top: 0;
-  background-color: rgb(80,64,144);
+  background-color: var(--carbon);
+  box-shadow: 0 33px 39px 31px rgba(0, 0, 0, 0.2);
   z-index: 1;
   transform: translateX(-50%);
   opacity: 0;
@@ -41,10 +43,11 @@
   min-width: 90px;
   min-height: 90px;
   border-radius: 50%;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .5) 
 }
 
 .avatar .details {
-  color: rgb(255, 255, 255);
+  color: var(--silver);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -53,14 +56,15 @@
 }
 
 .avatar a {
-  color: rgb(255, 255, 255);
+  color: var(--silver);
   text-decoration: none;
 }
 
 .links {
+  padding-top: calc(var(--padding) * 2);
   align-self: center;
-  margin-top: 2vh;
-  border-top: 5px solid rgb(255, 255, 255);
+  margin-top: 3vh;
+  border-top: 15px solid var(--silver);
 }
 
 .links ul {
@@ -71,10 +75,11 @@
 
 .links li {
   list-style-type: none;
+  padding-top: calc(var(--padding) * 3);
 }
 
 .links a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: var(--silver);
   font-size: 4vmin;
 }

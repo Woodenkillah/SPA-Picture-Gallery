@@ -1,30 +1,54 @@
 .MyInfo {
-  height: 100vh;
+  margin-left: 10vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 25vw;
-  margin-right: 25vw;
+}
+
+.MyInfo .container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  color: var(--carbon);
+  align-items: center;
+  margin: 0 auto;
+  padding: calc(var(--padding) * 2);
+  background-color: rgba(249, 242, 242, 0.1);
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, .3);
+  width: 45vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .MyInfo h2 {
   margin: 0 auto;
 }
 
-.MyInfo .avatar {
+.MyInfo .contacts {
   display: flex;
   flex-direction: row;
+}
+
+.MyInfo .contacts_details {
+  margin-right: calc(var(--padding) * 4);
 }
 
 .MyInfo img {
   width: 25vmin;
   height: 25vmin;
-  border-radius: 50%;
+  margin-bottom: 7%;
+  border-radius: 2%;
 }
 
-.MyInfo .avatar_text {
+.MyInfo .contacts_text {
   display: flex;
   flex-direction: column;
+}
+
+.MyInfo .contacts_text h2 {
+  font-size: 3vw;
+  line-height: 1;
 }
 
 .MyInfo .my_info {
@@ -32,19 +56,33 @@
   flex-direction: column;
 }
 
-.MyInfo .tech_stack {
+.MyInfo a {
+  text-decoration: none;
+  font-size: 4rem;
+  color: var(--silver);
+}
 
+.MyInfo h2 {
+  margin-bottom: 1.5%;
+}
+
+.MyInfo h4 {
+  margin-bottom: 1%;
+}
+
+.MyInfo li {
+  list-style-position: inside
+}
+
+.MyInfo .tech_stack {
+  margin-top: 4%;
 }
 
 .MyInfo .add_links {
-
-}
-
-.MyInfo .prev_job {
-
+  margin-top: 3%;
 }
 
 .MyInfo .hobbies {
-
+  margin-top: 3%;
 }
 

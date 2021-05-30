@@ -1,19 +1,36 @@
 import {useSelector} from 'react-redux';
 import {useParams} from 'react-router-dom';
 import styles from './Details.module.css';
+import Message from '../Message/Message';
 
 const Details = () => {
 
   const {pics} = useSelector((state) => state);
+
   const targetId = parseInt((useParams().id), 10);
 
-  const {url, title} = pics[targetId];
+  const targetPic = pics.find(({id}) => id === targetId);
+
+  if (!targetPic) {
+    const messageText = `Изображение не найдено.`
+
+    return (
+      <Message text={messageText}/>
+    )
+  };
+
+  const {url, title, id} = targetPic;
 
   return (
     <div className={styles.Details}>
       <h2>Подробная информация</h2>
-      <div className={styles.pic_info}>
-        <h3>{title}</h3>
+      <div className={styles.info_block}>
+        <div className={styles.info_block__text}>
+          <h3>{title}</h3>
+          <p>{`ID изображения: ${id}`}</p>
+          <p>Ссылка на источник изображения: <a href={url} target='_blank' rel='noopener noreferrer'>{url}</a></p>
+          <p>Примечание: Цвет изображения по ссылке на источник выше может отличаться из-за применненного цветовогот фильтра.</p>
+        </div>
         <img src={url} alt={title}/>
       </div>
     </div>

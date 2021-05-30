@@ -18,3 +18,9 @@ export const PICS_CATEGORIES = [`Зима`, `Весна`, `Лето`, `Осен�
 export const CATEGORY_SIZE = 6;
 
 export const DEFAULT_CATEGORY = `Все категории`;
+
+export const MyContacts = {
+  EMAIL: `r.e.boychuk@gmail.com`,
+  VK: `https://vk.com/id2660088`,
+  MOB: `+7 (967) 131-34-88`
+}

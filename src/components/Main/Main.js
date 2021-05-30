@@ -9,10 +9,20 @@ import { changeCategory } from '../../redux/pictures/actions-creator';
 
 const Main = () => {
 
-  const { pics, activeCategory, isLoading, isLoadingCompleted } = useSelector((state) => state);
+  const {
+    pics,
+    activeCategory,
+    isLoading,
+    isLoadingCompleted
+  } = useSelector((state) => state);
 
   const dispatch = useDispatch();
-  const handleChangeCategory = category => dispatch(changeCategory(category))
+  
+  const handleChangeCategory = category => {
+    if (category !== activeCategory) {
+      dispatch(changeCategory(category))
+    }
+  };
 
   const picsList = categorizePics(pics, PICS_CATEGORIES, CATEGORY_SIZE);
 

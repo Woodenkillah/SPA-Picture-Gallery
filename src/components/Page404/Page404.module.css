@@ -1,0 +1,33 @@
+.Page404 {
+  margin-left: 10vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--padding);
+  padding-bottom: calc(var(--padding) * 3);
+}
+
+.Page404 p {
+  padding-top: calc(var(--padding) * 2);
+}
+
+.Page404 a {
+  text-decoration: none;
+  font-size: 4rem;
+  color: var(--silver);
+}
+
+.Page404 .container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  color: var(--carbon);
+  align-items: center;
+  margin: 0 auto;
+  padding: calc(var(--padding) * 2);
+  background-color: rgba(249, 242, 242, 0.1);
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, .3);
+  width: 45vw;
+  margin-left: auto;
+  margin-right: auto;
+}
