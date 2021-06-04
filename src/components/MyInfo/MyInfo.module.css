@@ -9,16 +9,14 @@
 .MyInfo .container {
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
+  border-radius: 5px;
   color: var(--carbon);
   align-items: center;
   margin: 0 auto;
   padding: calc(var(--padding) * 2);
   background-color: rgba(249, 242, 242, 0.1);
-  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
   width: 45vw;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .MyInfo h2 {
@@ -36,7 +34,6 @@
 
 .MyInfo .photo {
   width: 25vmin;
-  height: 25vmin;
   margin-bottom: 7%;
   border-radius: 2%;
 }
@@ -67,8 +64,8 @@
   text-decoration: none;
   font-size: 2vmin;
   color: var(--silver);
-  line-height: 1.5;
-  margin-bottom: 0.25vh;
+  line-height: 1.2;
+  /* margin-bottom: 1.25vh; */
 }
 
 .MyInfo h2 {
@@ -80,18 +77,11 @@
 }
 
 .MyInfo li {
-  list-style-position: inside
+  list-style-position: inside;
 }
 
-.MyInfo .tech_stack {
+.MyInfo .tech_stack,
+.MyInfo .add_links,
+.MyInfo .hobbies {
   margin-top: 4%;
 }
-
-.MyInfo .add_links {
-  margin-top: 3%;
-}
-
-.MyInfo .hobbies {
-  margin-top: 3%;
-}
-

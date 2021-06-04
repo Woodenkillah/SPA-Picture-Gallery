@@ -20,7 +20,6 @@ const MyInfo = () => {
               <img className={styles.icon} src={gmailIcon} alt={`gmail icon`}/>
               <span>{MyContacts.EMAIL}</span>
             </a>
-            <br/>
             <a href={MyContacts.VK} target='_blank' rel='noopener noreferrer'>
               <img className={styles.icon} src={vkIcon} alt={`vkontakte icon`}/>
               <span>{MyContacts.VK}</span>
@@ -38,7 +37,8 @@ const MyInfo = () => {
             <h4>Стек технологий</h4>
             <ul>
               <li>JavaScript (ES6+)</li>
-              <li>React (hooks) + Redux</li>
+              <li>React (hooks), React-router-dom</li>
+              <li>Redux, React-redux, Redux-thunk</li>
               <li>HTML5 + CSS3</li>
               <li>Webpack (основы)</li>
               <li>Git</li>

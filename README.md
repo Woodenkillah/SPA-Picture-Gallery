@@ -11,8 +11,15 @@ Each picture refers to details page with short related info.
 The SPA also includes section with my personal information, available via the burger-menu at the top left corner.
 
 The technology stack mainly included:
+
 - JavaScript (ES6)
 - React (hooks), React-router-dom
 - Redux, React-redux, Redux-thunk
 - HTML & CSS
 - Axios
+
+The screenshots are presented below:
+
+<img src='screenshots/screenshot_1.jpg' alt='main page' width='50%'>
+<hr>
+<img src='screenshots/screenshot_2.jpg' alt='my info' width='50%'>

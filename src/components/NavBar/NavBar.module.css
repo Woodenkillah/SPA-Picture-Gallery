@@ -4,7 +4,7 @@
   min-width: 80px;
   height: 100vh;
   background-color: var(--carbon);
-  box-shadow: 0 33px 39px 31px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 6px 5px rgba(0, 0, 0, 0.4);
   z-index: 999;
 }
 
@@ -17,7 +17,7 @@
   height: 100%;
   top: 0;
   background-color: var(--carbon);
-  box-shadow: 0 33px 39px 31px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 6px 5px rgba(0, 0, 0, 0.4);
   z-index: 1;
   transform: translateX(-50%);
   opacity: 0;
@@ -39,11 +39,10 @@
 
 .NavBar .avatar img {
   width: 10vw;
-  height: 10vw;
   min-width: 90px;
   min-height: 90px;
   border-radius: 50%;
-  box-shadow: 0 10px 30px 0 rgba(155, 118, 118, 0.5);
+  box-shadow: 0px 0px 9px 7px rgba(155, 118, 118, 0.5);
 }
 
 .NavBar .avatar .details {
@@ -64,7 +63,7 @@
   padding-top: calc(var(--padding) * 2);
   align-self: center;
   margin-top: 3vh;
-  border-top: 15px solid var(--silver);
+  border-top: 5px solid var(--silver);
 }
 
 .NavBar .links ul {

@@ -4,7 +4,7 @@
   height: 25vmin;
   margin: 2%;
   overflow: hidden;
-  box-shadow: 51px -51px 15px -12px rgba(75, 85, 84, 0.3);
+  box-shadow: 9px -8px 3px 0px rgba(75, 85, 84, 0.3);
 }
 
 .PicItem img {
@@ -23,7 +23,7 @@
   height: 15%;
   color: rgb(241 209 201);
   border: none;
-  border-radius: 10px;
+  border-radius: 4px;
   cursor: pointer;
   opacity: 0;
   transform: translate(-50%, 250%);
